@@ -4,6 +4,7 @@
 class Watch {
     public:
         Watch(int watchRadius);
+
         void setPos(int posX, int posY);
         
         void setTime(int hour, int minute, int second);

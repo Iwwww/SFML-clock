@@ -8,19 +8,20 @@ int main() {
 
     Watch watch(300);
     watch.setPos(100, 100);
+    watch.setTime(3, 48, 24);
 
     sf::Clock clock;
 
     while (window.isOpen()) {
-        
         sf::Event event;
         while (window.pollEvent(event)) {
             if (event.type == sf::Event::Closed) {
-                    window.close();
+                window.close();
             }
         }
     
         sf::Time elapsed = clock.getElapsedTime();
+
         watch.setTimeInSeconds(elapsed.asSeconds());
     
         window.clear(sf::Color::Black);
@@ -30,4 +31,4 @@ int main() {
 
     return 0;
 }
-             
+
