@@ -4,11 +4,11 @@
 int main() {
     sf::ContextSettings settings;
     settings.antialiasingLevel = 8;
-    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML test window!", sf::Style::Default, settings);
+    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML Clock", sf::Style::Default, settings);
 
     Watch watch(300);
     watch.setPos(100, 100);
-    watch.setTime(3, 48, 24);
+    // watch.setTime(3, 48, 24); // preview
 
     sf::Clock clock;
 
